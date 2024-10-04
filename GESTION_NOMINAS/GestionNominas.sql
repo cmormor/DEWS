@@ -13,7 +13,8 @@ CREATE TABLE Empleados (
 CREATE TABLE Nominas (
     dni VARCHAR(9) PRIMARY KEY,
     sueldo INT,
-    FOREIGN KEY (dni) REFERENCES Empleados(dni) ON DELETE CASCADE
+    FOREIGN KEY (dni) REFERENCES Empleados(dni) 
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 INSERT INTO Empleados (nombre, dni, sexo, categoria, anyos_trabajados)
