@@ -365,7 +365,7 @@ public class Main {
 
 		Empleado[] empleados = bd.leerEmpleadosDesdeBD();
 
-		BufferedWriter bw = new BufferedWriter(new FileWriter("backup_base_de_datos.sql"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("backup_base_de_datos.txt"));
 
 		for (Empleado emp : empleados) {
 
