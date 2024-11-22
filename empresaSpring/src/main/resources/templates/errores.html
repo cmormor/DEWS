@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #d9534f;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            color: #007bff;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Error en la Búsqueda</h1>
+    <p th:text="${errorMensaje}">Hubo un error al procesar tu solicitud. Por favor, intenta nuevamente.</p>
+
+    <a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>
